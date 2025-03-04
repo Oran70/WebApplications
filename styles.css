@@ -1,0 +1,428 @@
+/* 📌 Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* 🌍 Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100%;  /* Ensures full height */
+    display: flex;  /* Enables flexible layout */
+    flex-direction: column;  /* Aligns content vertically */
+}
+
+/* 📌 Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    background: white;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: #3a2e2b;
+    font-size: 25px;
+    line-height: 80px;
+    padding-left: 20px;
+    font-weight: bold;
+    float: left;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #3a2e2b;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/* 🔄 Navigation Hover Effects */
+a.active, a:hover {
+    background: transparent;
+    color: #3a2e2b;
+    transition: .3s;
+}
+
+
+/* 📱 Mobile Navigation */
+.checkbtn {
+    font-size: 22px;
+    color: #3a2e2b;
+    float: right;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* 🔹 Responsive Adjustments for Navigation */
+@media (max-width: 1050px) {
+    label.logo {
+        padding-left: 30px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 890px) {
+    .checkbtn {
+        display: block;
+    }
+    label.logo {
+        font-size: 22px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #3a1f18;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: white;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/* 🎨 Page Background */
+/* 📖 About Page Styling */
+section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: left;
+}
+section h2 {
+    color: #3e4b3a;
+    margin-top: 30px;
+    font-size: 28px;
+}
+section p, section ol {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #3a2e2b;
+}
+section ol li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* 🌍 General Page Styles */
+body {
+    padding-top: 80px;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    color: #3a2e2b;
+    text-align: center;
+}
+
+main {
+    flex: 1;  /* Makes main content take up available space */
+}
+
+/* 🏡 Header Section */
+header {
+    background: #f4f1ec;
+    padding: 40px 0;
+}
+header h1 {
+    font-size: 36px;
+    color: #3a2e2b;
+}
+
+/* 🔍 Search & Sorting */
+input, select {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+/* 📌 Middle Section Styling */
+.middle-text {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.middle-text h2 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+.middle-text p {
+    font-size: 22px;
+    color: #4a4a4a;
+    line-height: 1.7;
+    margin: 20px auto;
+}
+
+
+
+/*  Gallery Layout */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    min-height: 300px;
+}
+
+/* 🎨 Artwork Cards */
+.image-card {
+    background: #ebe5e1;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 10px;
+}
+
+/* 🔄 Pagination Controls */
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* 🎛 Buttons (General) */
+button {
+    padding: 10px 20px;
+    background: #3e4b3a;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 5px;
+    transition: background 0.3s ease-in-out;
+
+}
+
+button:hover {
+    background: #3e4b3a;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #3e4b3a;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Ensures it looks like a button */
+    transition: background 0.3s ease-in-out;
+}
+.btn-primary:hover {
+    background: #2d3a2b;
+}
+
+
+
+/* ➕ "Add New Artwork" Button */
+#addArtworkBtn {
+    padding: 10px 20px;
+    background: 3e4b3a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* 💾 Save Button */
+#saveArtworkBtn {
+    padding: 10px;
+    background: 3e4b3a;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* 📦 Modal (Used in `add_artwork.html`) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+/* 📝 Modal Content Box */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+/* ❌ Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* 🖼 Image Preview (Used in `add_artwork.html`) */
+#imagePreview {
+    width: 100%;
+    max-height: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* 🚫 Hidden Class */
+.hidden {
+    display: none;
+}
+
+
+/* 📝 Contact Page Styling */
+form#contactForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f6f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+form#contactForm input,
+form#contactForm textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+}
+form#contactForm textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+form#contactForm button {
+    background: #3e4b3a;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+form#contactForm button:hover {
+    background: #2d3a2b;
+}
+
+
+/* Footer */
+footer {
+    background-color: #4b4b4b;
+    color: white;
+    padding: 50px 60px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+}
+
+.footer-section p, .footer-section a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Social Media Links */
+.footer-section a {
+    display: inline-block;
+    margin-right: 15px;
+}
