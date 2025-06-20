@@ -1,7 +1,7 @@
-/* 📌 Google Fonts */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
-/* 🌍 Global Styles */
+/* Global Styles */
 * {
     padding: 0;
     margin: 0;
@@ -17,7 +17,7 @@ html, body {
     flex-direction: column;  /* Aligns content vertically */
 }
 
-/* 📌 Navigation Bar */
+/* Navigation Bar */
 nav {
     position: fixed;
     top: 0;
@@ -57,7 +57,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-/* 🔄 Navigation Hover Effects */
+/* Navigation Hover Effects */
 a.active, a:hover {
     background: transparent;
     color: #3a2e2b;
@@ -65,7 +65,7 @@ a.active, a:hover {
 }
 
 
-/* 📱 Mobile Navigation */
+/* Mobile Navigation */
 .checkbtn {
     font-size: 22px;
     color: #3a2e2b;
@@ -80,7 +80,7 @@ a.active, a:hover {
     display: none;
 }
 
-/* 🔹 Responsive Adjustments for Navigation */
+/* Responsive Adjustments for Navigation */
 @media (max-width: 1050px) {
     label.logo {
         padding-left: 30px;
@@ -125,8 +125,8 @@ a.active, a:hover {
     }
 }
 
-/* 🎨 Page Background */
-/* 📖 About Page Styling */
+/* Page Background */
+/* About Page Styling */
 section {
     max-width: 800px;
     margin: 0 auto;
@@ -148,7 +148,7 @@ section ol li {
     font-size: 18px;
 }
 
-/* 🌍 General Page Styles */
+/* General Page Styles */
 body {
     padding-top: 80px;
     font-family: 'Poppins', sans-serif;
@@ -161,7 +161,7 @@ main {
     flex: 1;  /* Makes main content take up available space */
 }
 
-/* 🏡 Header Section */
+/* Header Section */
 header {
     background: #f4f1ec;
     padding: 40px 0;
@@ -171,14 +171,14 @@ header h1 {
     color: #3a2e2b;
 }
 
-/* 🔍 Search & Sorting */
+/* Search & Sorting */
 input, select {
     padding: 10px;
     margin: 10px;
     width: 200px;
 }
 
-/* 📌 Middle Section Styling */
+/* Middle Section Styling */
 .middle-text {
     max-width: 700px;
     margin: 0 auto;
@@ -210,22 +210,45 @@ input, select {
     min-height: 300px;
 }
 
-/* 🎨 Artwork Cards */
+/* Artwork Cards */
 .image-card {
     background: #ebe5e1;
-    padding: 10px;
-    border-radius: 10px;
-    max-width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 280px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .image-card img {
     width: 100%;
-    max-height: 200px;
+    max-height: 220px;
     border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
-/* 🔄 Pagination Controls */
+.image-card h3 {
+    color: #3a2e2b;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0 5px 0;
+}
+
+.image-card p {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Pagination Controls */
 #pagination {
     display: flex;
     justify-content: center;
@@ -236,7 +259,7 @@ input, select {
     position: relative;
 }
 
-/* 🎛 Buttons (General) */
+/* Buttons (General) */
 button {
     padding: 10px 20px;
     background: #3e4b3a;
@@ -276,26 +299,26 @@ button:hover {
 
 
 
-/* ➕ "Add New Artwork" Button */
+/* "Add New Artwork" Button */
 #addArtworkBtn {
     padding: 10px 20px;
-    background: 3e4b3a;
+    background: #3e4b3a;
     color: white;
     border: none;
     cursor: pointer;
     margin-bottom: 10px;
 }
 
-/* 💾 Save Button */
+/* Save Button */
 #saveArtworkBtn {
     padding: 10px;
-    background: 3e4b3a;
+    background: #3e4b3a;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-/* 📦 Modal (Used in `add_artwork.html`) */
+/* Modal (Used in `add_artwork.html`) */
 .modal {
     display: none;
     position: fixed;
@@ -309,7 +332,7 @@ button:hover {
     align-items: center;
 }
 
-/* 📝 Modal Content Box */
+/* Modal Content Box */
 .modal-content {
     background: white;
     padding: 20px;
@@ -323,7 +346,7 @@ button:hover {
 
 
 
-/* ❌ Close Button */
+/* Close Button */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -332,7 +355,7 @@ button:hover {
     cursor: pointer;
 }
 
-/* 🖼 Image Preview (Used in `add_artwork.html`) */
+/* Image Preview (Used in `add_artwork.html`) */
 #imagePreview {
     width: 100%;
     max-height: 200px;
@@ -340,13 +363,13 @@ button:hover {
     border-radius: 5px;
 }
 
-/* 🚫 Hidden Class */
+/* Hidden Class */
 .hidden {
     display: none;
 }
 
 
-/* 📝 Contact Page Styling */
+/* Contact Page Styling */
 form#contactForm {
     display: flex;
     flex-direction: column;
@@ -425,4 +448,144 @@ footer {
 .footer-section a {
     display: inline-block;
     margin-right: 15px;
+}
+
+/* Gallery Header Styling */
+.gallery-header {
+    background: #f4f1ec;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-header h1 {
+    font-size: 36px;
+    color: #3a2e2b;
+    margin-bottom: 20px;
+}
+
+.gallery-header input,
+.gallery-header select,
+.gallery-header button {
+    margin: 10px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.gallery-header input {
+    width: 250px;
+}
+
+.gallery-header select {
+    width: 200px;
+}
+
+/* Add Artwork Form Styling */
+#addArtworkForm {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #f9f6f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#addArtworkForm input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#addArtworkForm label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #3a2e2b;
+}
+
+#addArtworkForm button {
+    margin: 10px 5px;
+    padding: 12px 20px;
+    background: #3e4b3a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+#addArtworkForm button:hover {
+    background: #2d3a2b;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .gallery-header {
+        padding: 20px 10px;
+    }
+    
+    .gallery-header h1 {
+        font-size: 28px;
+    }
+    
+    .gallery-header input,
+    .gallery-header select,
+    .gallery-header button {
+        width: 100%;
+        margin: 5px 0;
+    }
+    
+    #gallery {
+        gap: 15px;
+        padding: 15px;
+    }
+    
+    .image-card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .middle-text h2 {
+        font-size: 36px;
+    }
+    
+    .middle-text p {
+        font-size: 18px;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-header h1 {
+        font-size: 24px;
+    }
+    
+    .middle-text h2 {
+        font-size: 28px;
+    }
+    
+    .middle-text p {
+        font-size: 16px;
+    }
+    
+    #addArtworkForm {
+        margin: 20px 10px;
+        padding: 20px;
+    }
 }

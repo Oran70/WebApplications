@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Artwork</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Add New Artwork</h1>
+    </header>
+
+    <div id="addArtworkForm">
+        <input type="text" id="newName" placeholder="Artwork Name" required>
+        <input type="text" id="newFruitType" placeholder="Fruit Type" required>
+        <input type="text" id="newGroup" placeholder="Group (optional)">
+        
+        <label for="newPlantedDate">Planted Date:</label>
+        <input type="date" id="newPlantedDate" required>
+        
+        <label for="newArtworkDate">Artwork Date:</label>
+        <input type="date" id="newArtworkDate" required>
+        
+        <label for="newImageFile">Upload Image:</label>
+        <input type="file" id="newImageFile" accept="image/*" required>
+        <img id="imagePreview" src="#" alt="Image Preview" class="hidden" style="max-width: 200px; margin-top: 10px;">
+
+        <button id="saveArtworkBtn">Save</button>
+        <button onclick="window.location.href='/frontend/pages/gallery.html'">Cancel</button>
+    </div>
+
+    <script src="/scripts/add_script.js"></script>
+
+</body>
+</html>
