@@ -52,7 +52,7 @@ saveButton.addEventListener("click", async () => {
     };
 
     try {
-        const response = await fetch("http://localhost:3000/artworks", {
+        const response = await fetch("https://oroots-d5h6amhfbye2angj.westeurope-01.azurewebsites.net/artworks", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
