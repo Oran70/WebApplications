@@ -1,124 +1,124 @@
 {
   "artworks": [
     {
+      "id": 1,
       "name": "Ethereal Veins",
       "fruitType": "Grape-Fruit",
       "group": "G1",
       "plantedDate": "2022-01-10",
       "artworkDate": "2023-06-15",
-      "image": "assets/images/GrapeFruit-001-G1.png",
-      "id": "509b"
+      "image": "assets/images/GrapeFruit-001-G1.png"
     },
     {
+      "id": 2,
       "name": "Whispers of the Earth",
       "fruitType": "Grape-Fruit",
       "group": "G1",
       "plantedDate": "2022-02-05",
       "artworkDate": "2023-07-10",
-      "image": "assets/images/GrapeFruit-002-G1.png",
-      "id": "a54f"
+      "image": "assets/images/GrapeFruit-002-G1.png"
     },
     {
+      "id": 3,
       "name": "Silent Symphony",
       "fruitType": "Lemon",
       "group": "G3",
       "plantedDate": "2021-12-01",
       "artworkDate": "2023-04-20",
-      "image": "assets/images/Lemon-004-G3.png",
-      "id": "098f"
+      "image": "assets/images/Lemon-004-G3.png"
     },
     {
+      "id": 4,
       "name": "Rooted Dreams",
       "fruitType": "Passion-Fruit",
       "group": "G1",
       "plantedDate": "2022-03-22",
       "artworkDate": "2023-08-30",
-      "image": "assets/images/PassionFruit-003-G1.png",
-      "id": "19a9"
+      "image": "assets/images/PassionFruit-003-G1.png"
     },
     {
+      "id": 5,
       "name": "Lemon Essence",
       "fruitType": "Lemon",
       "group": "G2",
       "plantedDate": "2022-04-15",
       "artworkDate": "2023-09-10",
-      "image": "assets/images/Lemon-005-G4.png",
-      "id": "2a3a"
+      "image": "assets/images/Lemon-005-G4.png"
     },
     {
+      "id": 6,
       "name": "Citrus Harmony",
       "fruitType": "Lemon",
       "group": "G2",
       "plantedDate": "2022-05-20",
       "artworkDate": "2023-10-05",
-      "image": "assets/images/Lemon-006-G2.png",
-      "id": "9422"
+      "image": "assets/images/Lemon-006-G2.png"
     },
     {
+      "id": 7,
       "name": "Golden Threads",
       "fruitType": "Lemon",
       "group": "G2",
       "plantedDate": "2022-06-12",
       "artworkDate": "2023-11-15",
-      "image": "assets/images/Lemon-007-G2.png",
-      "id": "e3df"
+      "image": "assets/images/Lemon-007-G2.png"
     },
     {
+      "id": 8,
       "name": "Lemon Labyrinth",
       "fruitType": "Lemon",
       "group": "G3",
       "plantedDate": "2022-07-08",
       "artworkDate": "2023-12-01",
-      "image": "assets/images/Lemon-008-G3.png",
-      "id": "374f"
+      "image": "assets/images/Lemon-008-G3.png"
     },
     {
+      "id": 9,
       "name": "Citrus Whispers",
       "fruitType": "Lemon",
       "group": "G4",
       "plantedDate": "2022-08-25",
       "artworkDate": "2024-01-10",
-      "image": "assets/images/Lemon-010-G4.png",
-      "id": "a58b"
+      "image": "assets/images/Lemon-010-G4.png"
     },
     {
+      "id": 10,
       "name": "Woven Sunshine",
       "fruitType": "Lemon",
       "group": "N/A",
       "plantedDate": "2022-09-01",
       "artworkDate": "2024-02-15",
-      "image": "assets/images/Lemon-009.png",
-      "id": "7b9f"
+      "image": "assets/images/Lemon-009.png"
     },
     {
+      "id": 11,
       "name": "Citrus Spiral",
       "fruitType": "Lemon",
       "group": "N/A",
       "plantedDate": "2022-10-10",
       "artworkDate": "2024-03-20",
-      "image": "assets/images/Lemon-011.png",
-      "id": "0e66"
+      "image": "assets/images/Lemon-011.png"
     },
     {
+      "id": 12,
       "name": "Golden Roots",
       "fruitType": "Lemon",
       "group": "N/A",
       "plantedDate": "2022-11-05",
       "artworkDate": "2024-04-25",
-      "image": "assets/images/Lemon-012.png",
-      "id": "6f15"
+      "image": "assets/images/Lemon-012.png"
     },
     {
+      "id": 13,
       "name": "Nature's Sketch",
       "fruitType": "Lemon",
       "group": "N/A",
       "plantedDate": "2022-12-01",
       "artworkDate": "2024-05-30",
-      "image": "assets/images/Lemon-013.png",
-      "id": "3541"
+      "image": "assets/images/Lemon-013.png"
     },
     {
-      "id": "9aa8",
+      "id": 14,
       "name": "microscopy",
       "fruitType": "no fruit",
       "group": null,
@@ -127,7 +127,7 @@
       "image": "assets/images/Schermafbeelding 2024-09-17 211144.png"
     },
     {
-      "id": "7d01",
+      "id": 15,
       "name": "another microscopy",
       "fruitType": "none",
       "group": null,
@@ -136,7 +136,7 @@
       "image": "assets/images/Schermafbeelding 2024-09-17 211150.png"
     },
     {
-      "id": "7d07",
+      "id": 16,
       "name": "wortel",
       "fruitType": "varen",
       "group": null,
@@ -145,7 +145,7 @@
       "image": "assets/images/wortel.png"
     },
     {
-      "id": "7eda",
+      "id": 17,
       "name": "Root Lemon",
       "fruitType": "Lemon",
       "group": "TestGroup",
