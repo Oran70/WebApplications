@@ -7,7 +7,7 @@ A dynamic web application to showcase a collection of plant root art. It feature
 ## Technologies Used
 
 *   **Frontend**: HTML5, CSS3, vanilla JavaScript (ES6+)
-*   **Backend Simulation**: `json-server` to provide a RESTful API for artworks.
+*   **Backend**: Express.js with a JSON file acting as a database.
 *   **Deployment**: Automated CI/CD to Microsoft Azure App Service from GitHub.
 *   **Runtime**: Node.js 20-LTS
 
@@ -59,10 +59,10 @@ This project is configured for **Continuous Deployment**. There are no manual de
 
 Two main scripts are configured for this project:
 
-*   `"dev"`: `json-server --watch backend/db.json --port 3000 --static ./`
-    *   Used for **local development**. Runs the server on a fixed port (3000). Launched via `start.bat`.
-*   `"start"`: `json-server --watch backend/db.json --host 0.0.0.0 --port $PORT --static ./`
-    *   Used by the **Azure App Service** for deployment. It dynamically uses the port that Azure assigns via the `$PORT` environment variable.
+*   `"dev"`: `node server.js`
+    *   Used for **local development**. Runs the Express server on port 3000. Launched via `start.bat`.
+*   `"start"`: `node server.js`
+    *   Used by the **Azure App Service** for deployment. The Express server dynamically uses the port that Azure assigns.
 
 ## Project Structure
 ```
@@ -93,6 +93,76 @@ WebApplications/
 - **Responsive Design**: Works perfectly on desktop, tablet, and mobile
 - **Modern UI**: Clean, elegant design with smooth animations
 
+## API Documentation
+
+| Section | Description |
+| :--- | :--- |
+| **Description** | This API manages the ORoots digital art collection. |
+| **Authentication** | None. The API is public. |
+| **Base URL (Local)** | `http://localhost:3000` |
+| **Base URL (Prod)** | `https://oroots-ngj.westeurope-01.azurewebsites.net` |
+| **Endpoints** | `- /artworks` (GET): Retrieves a list of all artworks.<br>- `/artworks` (POST): Creates a new artwork. |
+| **Resource Model** | `artwork { id: int, name: string, fruitType: string, group: string, plantedDate: string, artworkDate: string, image: string }` |
+| **Response Format**| JSON |
+| **Error Handling** | `- 200 OK`: Request was successful.<br>- `201 Created`: The new artwork was created successfully.<br>- `500 Internal Server Error`: A problem occurred on the server. |
+
+---
+
+### Example: GET /artworks
+
+Retrieves the full list of artworks.
+
+*   **Request:**
+    ```http
+    GET /artworks
+    ```
+
+*   **Response (200 OK):**
+    ```json
+    [
+        {
+            "id": 1,
+            "name": "Citrus Harmony",
+            "fruitType": "Lemon",
+            "group": "G3",
+            "plantedDate": "2023-01-15",
+            "artworkDate": "2023-05-20",
+            "image": "assets/images/Lemon-009.png"
+        }
+    ]
+    ```
+
+---
+
+### Example: POST /artworks
+
+Creates a new artwork entry. The `id` is generated automatically by the server.
+
+*   **Request Body:**
+    ```json
+    {
+        "name": "New Root",
+        "fruitType": "Carrot",
+        "group": "G1",
+        "plantedDate": "2024-01-01",
+        "artworkDate": "2024-05-01",
+        "image": "assets/images/wortel.png"
+    }
+    ```
+
+*   **Response (201 Created):**
+    ```json
+    {
+        "id": 16,
+        "name": "New Root",
+        "fruitType": "Carrot",
+        "group": "G1",
+        "plantedDate": "2024-01-01",
+        "artworkDate": "2024-05-01",
+        "image": "assets/images/wortel.png"
+    }
+    ```
+
 ## Usage
 
 ### Viewing the Gallery
@@ -111,16 +181,6 @@ WebApplications/
    - Artwork Date
    - Image URL
 3. Click "Save" to add the artwork to the collection
-
-## API Endpoints
-
-The application uses JSON Server to provide a REST API:
-
-- `GET /artworks` - Get all artworks
-- `POST /artworks` - Add a new artwork
-- `GET /artworks/:id` - Get a specific artwork
-- `PUT /artworks/:id` - Update an artwork
-- `DELETE /artworks/:id` - Delete an artwork
 
 ## Browser Support
 

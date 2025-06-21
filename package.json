@@ -4,10 +4,11 @@
   "description": "ORoots Gallery - Plant Root Art Collection",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch backend/db.json --host 0.0.0.0 --port $PORT --static ./",
-    "dev": "json-server --watch backend/db.json --port 3000 --static ./"
+    "start": "node server.js",
+    "dev": "node server.js"
   },
   "dependencies": {
+    "express": "^5.1.0",
     "json-server": "^1.0.0-beta.3"
   }
 }
