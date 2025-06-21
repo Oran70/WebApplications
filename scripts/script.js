@@ -7,7 +7,7 @@ let artworks = []; // Array to store fetched artworks from backend
 // Function to fetch artworks from backend and initialize page
 async function fetchArtworks() {
     try {
-        const response = await fetch("https://oroots-d5h6amhfbye2angj.westeurope-01.azurewebsites.net/artworks");
+        const response = await fetch("/artworks");
         const data = await response.json();
         artworks = data;
         filteredArtworks = [...artworks]; // Initially show all artworks

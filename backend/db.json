@@ -37,15 +37,6 @@
       "image": "assets/images/PassionFruit-003-G1.png"
     },
     {
-      "id": 5,
-      "name": "Lemon Essence",
-      "fruitType": "Lemon",
-      "group": "G2",
-      "plantedDate": "2022-04-15",
-      "artworkDate": "2023-09-10",
-      "image": "assets/images/Lemon-005-G4.png"
-    },
-    {
       "id": 6,
       "name": "Citrus Harmony",
       "fruitType": "Lemon",
@@ -74,21 +65,12 @@
     },
     {
       "id": 9,
-      "name": "Citrus Whispers",
+      "name": "Root Lemon Edited",
       "fruitType": "Lemon",
-      "group": "G4",
-      "plantedDate": "2022-08-25",
-      "artworkDate": "2024-01-10",
-      "image": "assets/images/Lemon-010-G4.png"
-    },
-    {
-      "id": 10,
-      "name": "Woven Sunshine",
-      "fruitType": "Lemon",
-      "group": "N/A",
-      "plantedDate": "2022-09-01",
-      "artworkDate": "2024-02-15",
-      "image": "assets/images/Lemon-009.png"
+      "group": "TestGroup",
+      "plantedDate": "2024-01-01",
+      "artworkDate": "2024-06-01",
+      "image": "assets/images/lemon-root.png"
     },
     {
       "id": 11,
@@ -152,6 +134,24 @@
       "plantedDate": "2024-01-01",
       "artworkDate": "2024-06-01",
       "image": "assets/images/lemon-root.png"
+    },
+    {
+      "name": "Root Lemon",
+      "fruitType": "Lemon",
+      "group": "TestGroup",
+      "plantedDate": "2024-01-01",
+      "artworkDate": "2024-06-01",
+      "image": "assets/images/lemon-root.png",
+      "id": 18
+    },
+    {
+      "name": "Root Lemon",
+      "fruitType": "Lemon",
+      "group": "TestGroup",
+      "plantedDate": "2024-01-01",
+      "artworkDate": "2024-06-01",
+      "image": "assets/images/lemon-root.png",
+      "id": 19
     }
   ]
 }
