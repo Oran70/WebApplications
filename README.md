@@ -4,11 +4,11 @@ A beautiful web application showcasing plant root art with a modern, responsive 
 
 ## Features
 
-- 🖼️ **Gallery Display**: View all artworks with pagination
-- 🔍 **Search & Filter**: Search by artwork name and sort by various criteria
-- ➕ **Add New Artworks**: Add new root art pieces to the collection
-- 📱 **Responsive Design**: Works perfectly on desktop, tablet, and mobile
-- 🎨 **Modern UI**: Clean, elegant design with smooth animations
+- **Gallery Display**: View all artworks with pagination
+- **Search & Filter**: Search by artwork name and sort by various criteria
+- **Add New Artworks**: Add new root art pieces to the collection
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile
+- **Modern UI**: Clean, elegant design with smooth animations
 
 ## Setup Instructions
 
@@ -116,15 +116,3 @@ The application uses JSON Server to provide a REST API:
 3. **API not responding**
    - Make sure the JSON server is running (`npm start`)
    - Check that db.json is in the correct location
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-This project is open source and available under the MIT License.
